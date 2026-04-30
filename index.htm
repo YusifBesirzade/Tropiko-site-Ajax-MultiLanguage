@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropiko</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar flex items-center justify-between gap-5 max-w-[1200px] mx-auto font-semibold my-5">
+            <div class="logo flex items-center gap-3">
+                <img src="img/logo.png" alt="logo">
+                <a href="#" class="font-bold">TROPIKO</a>
+            </div>
+            <div class="nav-menu hidden xl:flex items-center justify-between gap-10">
+                <ul class="flex items-center gap-5 text-gray-500">
+                    <li><a href="index.htm" data-key="navHome"></a></li>
+                    <li><a href="#" data-key="navFruits" onclick="loadPage('pages/fruits.htm')"></a></li>
+                    <li><a href="#" data-key="navServices" onclick="loadPage('pages/services.htm')"></a></li>
+                    <li><a href="#" data-key="navContactUs" onclick="loadPage('pages/contactus.htm')"></a>
+                    </li>
+                </ul>
+                <div class="btn flex items-center gap-20">
+                    <i class="fa-brands fa-sistrix" style="color: rgb(0, 0, 0);"></i>
+                    <button class="bg-[#FC5D35] text-white  px-2 text-sm">GET A QUOTE</button>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="changeLang('az')"
+                    class="bg-[#FC5D35] hover:bg-[#c42d08] text-white px-5 py-1 rounded text-sm transition cursor-pointer">AZ</button>
+                <button onclick="changeLang('en')"
+                    class="bg-[#3e68ff] hover:bg-[#0015ff] text-white px-5 py-1 rounded text-sm transition cursor-pointer">EN</button>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section id="hero">
+            <div class="hero my-10">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2 data-key="slidertitle"></h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't
+                                    look
+                                    even slightly believable.</p>
+                                <div class="btn">
+                                    <button class="btn1">Shop Now</button>
+                                    <button class="btn2">Contact Us</button>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/slide-img1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2 data-key="slidertitle">Welcome to Our Fruits Shop</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't
+                                    look
+                                    even slightly believable.</p>
+                                <div class="btn">
+                                    <button class="btn1">Shop Now</button>
+                                    <button class="btn2">Contact Us</button>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/slide-img1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2 data-key="slidertitle">Welcome to Our Fruits Shop</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't
+                                    look
+                                    even slightly believable.</p>
+                                <div class="btn">
+                                    <button class="btn1">Shop Now</button>
+                                    <button class="btn2">Contact Us</button>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/slide-img1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourservices" class="my-20">
+            <div class="container max-w-[1000px] mx-auto">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold" data-key="servicetitle"></h2>
+                    <p class="text-md" data-key="servicedesc">There are many variations of passages of Lorem Ipsum
+                        available, but the majority
+                        have</p>
+                </div>
+                <div class="servicecards flex flex-col m-5 xl:flex-row  items-center gap-10 my-10">
+                    <div
+                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        <img src="https://themewagon.github.io/tropika/images/card-item-1.png" alt="card1 photo">
+                        <h4 class="text-[#FC5D35] text-xl" data-key="servicecard1title"></h4>
+                        <p class="serviceinfo">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.</p>
+                    </div>
+                    <div
+                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        <img src="https://themewagon.github.io/tropika/images/card-item-2.png" alt="card2 photo">
+                        <h4 class="text-[#FC5D35] text-xl" data-key="servicecard2title"></h4>
+                        <p data-key="servicedesc">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.</p>
+                    </div>
+                    <div
+                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        <img src="https://themewagon.github.io/tropika/images/card-item-3.png" alt="card3 photo">
+                        <h4 class="text-[#FC5D35] text-xl" data-key="servicecard3title">Gauva</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.</p>
+                    </div>
+                </div>
+                <div class="btn flex justify-center">
+                    <button class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Read
+                        More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="freshfruits" class="my-20">
+            <div class="container max-w-[1000px] mx-auto">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold" data-key="fruitstitle">Fresh Fruits</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                </div>
+                <div class="freshcards flex flex-col items-center justify-center gap-10 my-15">
+                    <div class="freshcard flex items-center justify-center gap-15">
+                        <div class="freshcardinfo flex flex-col items-start gap-5">
+                            <h4 class="text-2xl font-medium" data-key="freshcard1title">Best Fresh Orange</h4>
+                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
+                                injected humour, or randomised
+                                words which don't look even slightly believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be</p>
+                            <div class="btn flex justify-center">
+                                <button
+                                    class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="freshcardimage">
+                            <img src="img/orange.png" alt="fresh card photo 1">
+                        </div>
+                    </div>
+                    <div class="freshcard flex items-center justify-center gap-15">
+                        <div class="freshcardinfo flex flex-col items-start gap-5">
+                            <h4 class="text-2xl font-medium" data-key="freshcard2title">Best Fresh Grapes</h4>
+                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
+                                injected humour, or randomised
+                                words which don't look even slightly believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be</p>
+                            <div class="btn flex justify-center">
+                                <button
+                                    class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="freshcardimage">
+                            <img src="img/grapes.png" alt="fresh card photo 1">
+                        </div>
+                    </div>
+                    <div class="freshcard flex items-center justify-center gap-15">
+                        <div class="freshcardinfo flex flex-col items-start gap-5">
+                            <h4 class="text-2xl font-medium" data-key="freshcard3title">Best Fresh Gauva</h4>
+                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
+                                injected humour, or randomised
+                                words which don't look even slightly believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be</p>
+                            <div class="btn flex justify-center">
+                                <button
+                                    class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="freshcardimage">
+                            <img src="img/gauva.png" alt="fresh card photo 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="my-20">
+            <div class="relative">
+                <!-- <img src="img/tasty-image.png" alt="testimonials photo"> -->
+                <!-- <h2 class="absolute text-white text-8xl font-bold top-70 left-80">VERY TASTY FRUITS</h2> -->
+            </div>
+        </section>
+
+        <section class="my-20">
+            <div class="testimonial my-20 max-w-[1000px] mx-auto">
+                <div class="testimonialtitle text-center">
+                    <h3 class="text-4xl font-bold" data-key="testimonialtitle">Testimonial</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but
+                        the majority have</p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper max-w-[500px]">
+                        <div class="swiper-slide flex flex-col items-center justify-center gap-5">
+                            <div class="image w-[30px]">
+                                <img src="img/client.png" alt="testimonial photo">
+                            </div>
+                            <div class="title">
+                                <h2 data-key="slider1title">Johnhex</h2>
+                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are
+                                    going to use a passage of Lorem Ipsum, you need to be sure.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-center justify-center gap-5">
+                            <div class="image">
+                                <img src="img/client.png" alt="testimonial photo">
+                            </div>
+                            <div class="title">
+                                <h2 data-key="slider1title">Johnhex</h2>
+                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are
+                                    going to use a passage of Lorem Ipsum, you need to be sure</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col items-center justify-center gap-5">
+                            <div class="image">
+                                <img src="img/client.png" alt="testimonial photo">
+                            </div>
+                            <div class="title">
+                                <h2 data-key="slider1title">Johnhex</h2>
+                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are
+                                    going to use a passage of Lorem Ipsum, you need to be sure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactus" class="my-20 bg-gray-100 py-16">
+            <div
+                class="contact max-w-[1000px] mx-auto flex flex-col xl:flex-row items-center justify-between gap-5 m-5 px-5">
+                <div class="form w-full max-w-lg">
+                    <h2 class="text-4xl font-bold">Contact Us</h2>
+                    <form action="" class="flex flex-col items-center gap-5">
+                        <input type="text" placeholder="Name"
+                            class="w-full py-2 border-b border-gray-400 outline-none focus:border-[#FC5D35]">
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full py-2 border-b border-gray-400 outline-none focus:border-[#FC5D35]">
+                        <input type="email" placeholder="Email"
+                            class="w-full py-2 border-b border-gray-400 outline-none focus:border-[#FC5D35]">
+                        <textarea placeholder="Message"
+                            class="w-full py-2 border-b border-gray-400 outline-none focus:border-[#FC5D35]"></textarea>
+                        <button class="bg-[#FC5D35] text-white py-1 px-8 cursor-pointer">SEND</button>
+                    </form>
+                </div>
+                <div class="contactimage">
+                    <img src="img/orange-dish.png" alt="contact photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="my-20">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.629058470129!2d49.806931175525456!3d40.37274865831577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030634e4ec45f67%3A0xa1628495e445ab6a!2sDiv%20Academy%20(Elml%C9%99r)!5e0!3m2!1str!2saz!4v1777406012324!5m2!1str!2saz"
+                height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="w-[400px] xl:w-[1520px]"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="container max-w-[1000px] mx-auto flex flex-col items-center justify-between gap-10 xl:flex-row">
+            <div class="flex flex-col gap-2">
+                <h5 class="text-xl font-semibold" data-key="footertitle">Fruits</h5>
+                <ul>
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h5 class="text-xl font-semibold" data-key="footertitle">Services</h5>
+                <ul>
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h5 class="text-xl font-semibold" data-key="footertitle">List</h5>
+                <ul>
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-start gap-4">
+                <h5 class="text-xl font-semibold">Follow Us</h5>
+                <div class="icons text-2xl">
+                    <i class="fa-brands fa-facebook cursor-pointer" style="color: rgb(0, 0, 0);"></i>
+                    <i class="fa-brands fa-square-twitter cursor-pointer" style="color: rgb(0, 0, 0);"></i>
+                    <i class="fa-brands fa-linkedin cursor-pointer" style="color: rgb(0, 0, 0);"></i>
+                    <i class="fa-brands fa-square-instagram cursor-pointer" style="color: rgb(0, 0, 0);"></i>
+                </div>
+                <div class="subscribe flex flex-col items-start gap-5">
+                    <h6 class="text-xl font-semibold">Subscribe Now</h6>
+                    <input type="text" class="border-1">
+                    <button class="bg-[#FC5D35] text-white py-1 px-8 cursor-pointer">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#EFEDED] p-5 mt-10">
+            <p class="text-center">Copyright © 2019 All Rights Reserved By Free Html Templates</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+</body>
+
+</html>

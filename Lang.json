@@ -1,0 +1,25 @@
+{
+    "az": {},
+    "en": {
+        "navHome": "Home",
+        "navFruits": "Fruits",
+        "navServices": "Service",
+        "navContactUs": "ContactUs",
+        "slidertitle": "Welcome to Our Fruits Shop",
+        "servicetitle": "Our Services",
+        "servicedesc": "",
+        "serviceinfo": "",
+        "servicecard1title": "Orange",
+        "servicecard2title": "Grapes",
+        "servicecard3title": "Gauva",
+        "servicedesc": "There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.","fruitstitle": "",
+        "freshcard1title": "",
+        "freshcarddesc": "",
+        "freshcard2title": "",
+        "freshcard3title": "",
+        "testimonialtitle": "",
+        "slider1title": "",
+    }
+}
