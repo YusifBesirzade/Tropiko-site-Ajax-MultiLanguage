@@ -37,6 +37,22 @@
                 <button onclick="changeLang('en')"
                     class="bg-[#3e68ff] hover:bg-[#0015ff] text-white px-5 py-1 rounded text-sm transition cursor-pointer">EN</button>
             </div>
+            <div onclick="openMenu()" class="menubar cursor-pointer block xl:hidden">
+                <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div id="mobilmenu" class="flex flex-col xl:hidden items-center justify-center gap-3">
+                <ul class="flex items-center gap-5 text-gray-500">
+                    <li><a href="index.htm" data-key="navHome"></a></li>
+                    <li><a href="#" data-key="navFruits" onclick="loadPage('pages/fruits.htm')"></a></li>
+                    <li><a href="#" data-key="navServices" onclick="loadPage('pages/services.htm')"></a></li>
+                    <li><a href="#" data-key="navContactUs" onclick="loadPage('pages/contactus.htm')"></a>
+                    </li>
+                </ul>
+                <div class="btn flex items-center gap-20">
+                    <i class="fa-brands fa-sistrix" style="color: rgb(0, 0, 0);"></i>
+                    <button class="bg-[#FC5D35] text-white  px-2 text-sm">GET A QUOTE</button>
+                </div>
+            </div>
         </div>
     </header>
     <main id="content">
@@ -47,11 +63,7 @@
                         <div class="swiper-slide">
                             <div class="title">
                                 <h2 data-key="slidertitle"></h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't
-                                    look
-                                    even slightly believable.</p>
+                                <p data-key="sliderdesc"></p>
                                 <div class="btn">
                                     <button class="btn1">Shop Now</button>
                                     <button class="btn2">Contact Us</button>
@@ -63,12 +75,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="title">
-                                <h2 data-key="slidertitle">Welcome to Our Fruits Shop</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't
-                                    look
-                                    even slightly believable.</p>
+                                <h2 data-key="slidertitle"></h2>
+                                <p data-key="sliderdesc"></p>
                                 <div class="btn">
                                     <button class="btn1">Shop Now</button>
                                     <button class="btn2">Contact Us</button>
@@ -80,12 +88,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="title">
-                                <h2 data-key="slidertitle">Welcome to Our Fruits Shop</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't
-                                    look
-                                    even slightly believable.</p>
+                                <h2 data-key="slidertitle"></h2>
+                                <p data-key="sliderdesc"></p>
                                 <div class="btn">
                                     <button class="btn1">Shop Now</button>
                                     <button class="btn2">Contact Us</button>
@@ -106,36 +110,26 @@
             <div class="container max-w-[1000px] mx-auto">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold" data-key="servicetitle"></h2>
-                    <p class="text-md" data-key="servicedesc">There are many variations of passages of Lorem Ipsum
-                        available, but the majority
-                        have</p>
+                    <p class="text-md" data-key="servicedesc"></p>
                 </div>
-                <div class="servicecards flex flex-col m-5 xl:flex-row  items-center gap-10 my-10">
+                <div class="servicecards flex flex-col m-5 xl:flex-row items-center gap-10 my-10">
                     <div
-                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        class="servicecard w-full max-w-sm h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
                         <img src="https://themewagon.github.io/tropika/images/card-item-1.png" alt="card1 photo">
                         <h4 class="text-[#FC5D35] text-xl" data-key="servicecard1title"></h4>
-                        <p class="serviceinfo">There are many variations of passages of Lorem Ipsum available, but the
-                            majority have
-                            suffered alteration in some form, by injected humour, or randomised words which don't look
-                            even slightly believable.</p>
+                        <p class="serviceinfo" data-key="serviceinfo"></p>
                     </div>
                     <div
-                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        class="servicecard w-full max-w-sm h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
                         <img src="https://themewagon.github.io/tropika/images/card-item-2.png" alt="card2 photo">
                         <h4 class="text-[#FC5D35] text-xl" data-key="servicecard2title"></h4>
-                        <p data-key="servicedesc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have
-                            suffered alteration in some form, by injected humour, or randomised words which don't look
-                            even slightly believable.</p>
+                        <p data-key="serviceinfo"></p>
                     </div>
                     <div
-                        class="servicecard w-[400px] h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
+                        class="servicecard w-full max-w-sm h-[300px] border-1 border-b-gray-500 flex flex-col items-center justify-center gap-3 cursor-pointer px-4">
                         <img src="https://themewagon.github.io/tropika/images/card-item-3.png" alt="card3 photo">
-                        <h4 class="text-[#FC5D35] text-xl" data-key="servicecard3title">Gauva</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words which don't look
-                            even slightly believable.</p>
+                        <h4 class="text-[#FC5D35] text-xl" data-key="servicecard3title"></h4>
+                        <p data-key="serviceinfo"></p>
                     </div>
                 </div>
                 <div class="btn flex justify-center">
@@ -148,17 +142,14 @@
         <section id="freshfruits" class="my-20">
             <div class="container max-w-[1000px] mx-auto">
                 <div class="text-center">
-                    <h2 class="text-4xl font-bold" data-key="fruitstitle">Fresh Fruits</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                    <h2 class="text-4xl font-bold" data-key="fruitstitle"></h2>
+                    <p data-key="fruitsdesc"></p>
                 </div>
-                <div class="freshcards flex flex-col items-center justify-center gap-10 my-15">
-                    <div class="freshcard flex items-center justify-center gap-15">
+                <div class="freshcards flex flex-col md:flex-row items-center justify-center gap-10 my-15 p-5">
+                    <div class="freshcard flex flex-col xl:flex-row items-center justify-center gap-15">
                         <div class="freshcardinfo flex flex-col items-start gap-5">
-                            <h4 class="text-2xl font-medium" data-key="freshcard1title">Best Fresh Orange</h4>
-                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
-                                injected humour, or randomised
-                                words which don't look even slightly believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be</p>
+                            <h4 class="text-2xl font-medium" data-key="freshcard1title"></h4>
+                            <p data-key="freshcarddesc"></p>
                             <div class="btn flex justify-center">
                                 <button
                                     class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
@@ -169,13 +160,10 @@
                             <img src="img/orange.png" alt="fresh card photo 1">
                         </div>
                     </div>
-                    <div class="freshcard flex items-center justify-center gap-15">
+                    <div class="freshcard flex flex-col xl:flex-row items-center justify-center gap-15">
                         <div class="freshcardinfo flex flex-col items-start gap-5">
-                            <h4 class="text-2xl font-medium" data-key="freshcard2title">Best Fresh Grapes</h4>
-                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
-                                injected humour, or randomised
-                                words which don't look even slightly believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be</p>
+                            <h4 class="text-2xl font-medium" data-key="freshcard2title"></h4>
+                            <p data-key="freshcarddesc"></p>
                             <div class="btn flex justify-center">
                                 <button
                                     class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
@@ -186,13 +174,10 @@
                             <img src="img/grapes.png" alt="fresh card photo 1">
                         </div>
                     </div>
-                    <div class="freshcard flex items-center justify-center gap-15">
+                    <div class="freshcard flex flex-col xl:flex-row items-center justify-center gap-15">
                         <div class="freshcardinfo flex flex-col items-start gap-5">
-                            <h4 class="text-2xl font-medium" data-key="freshcard3title">Best Fresh Gauva</h4>
-                            <p data-key="freshcarddesc">but the majority have suffered alteration in some form, by
-                                injected humour, or randomised
-                                words which don't look even slightly believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be</p>
+                            <h4 class="text-2xl font-medium" data-key="freshcard3title"></h4>
+                            <p data-key="freshcarddesc"></p>
                             <div class="btn flex justify-center">
                                 <button
                                     class="bg-black text-white hover:bg-transparent hover:text-black hover:border-2">Buy
@@ -217,9 +202,8 @@
         <section class="my-20">
             <div class="testimonial my-20 max-w-[1000px] mx-auto">
                 <div class="testimonialtitle text-center">
-                    <h3 class="text-4xl font-bold" data-key="testimonialtitle">Testimonial</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but
-                        the majority have</p>
+                    <h3 class="text-4xl font-bold" data-key="testimonialtitle"></h3>
+                    <p data-key="testimonialdesc"></p>
                 </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper max-w-[500px]">
@@ -228,12 +212,8 @@
                                 <img src="img/client.png" alt="testimonial photo">
                             </div>
                             <div class="title">
-                                <h2 data-key="slider1title">Johnhex</h2>
-                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
-                                    but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are
-                                    going to use a passage of Lorem Ipsum, you need to be sure.</p>
+                                <h2 data-key="slider1title"></h2>
+                                <p data-key="sliderdesc"></p>
                             </div>
                         </div>
                         <div class="swiper-slide flex flex-col items-center justify-center gap-5">
@@ -241,12 +221,8 @@
                                 <img src="img/client.png" alt="testimonial photo">
                             </div>
                             <div class="title">
-                                <h2 data-key="slider1title">Johnhex</h2>
-                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
-                                    but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are
-                                    going to use a passage of Lorem Ipsum, you need to be sure</p>
+                                <h2 data-key="slider1title"></h2>
+                                <p data-key="sliderdesc"></p>
                             </div>
                         </div>
                         <div class="swiper-slide flex flex-col items-center justify-center gap-5">
@@ -254,12 +230,8 @@
                                 <img src="img/client.png" alt="testimonial photo">
                             </div>
                             <div class="title">
-                                <h2 data-key="slider1title">Johnhex</h2>
-                                <p data-key="sliderdesc">There are many variations of passages of Lorem Ipsum available,
-                                    but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are
-                                    going to use a passage of Lorem Ipsum, you need to be sure</p>
+                                <h2 data-key="slider1title"></h2>
+                                <p data-key="sliderdesc"></p>
                             </div>
                         </div>
                     </div>
@@ -273,7 +245,7 @@
             <div
                 class="contact max-w-[1000px] mx-auto flex flex-col xl:flex-row items-center justify-between gap-5 m-5 px-5">
                 <div class="form w-full max-w-lg">
-                    <h2 class="text-4xl font-bold">Contact Us</h2>
+                    <h2 class="text-4xl font-bold" data-key="contacttitle"></h2>
                     <form action="" class="flex flex-col items-center gap-5">
                         <input type="text" placeholder="Name"
                             class="w-full py-2 border-b border-gray-400 outline-none focus:border-[#FC5D35]">
@@ -296,13 +268,13 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.629058470129!2d49.806931175525456!3d40.37274865831577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030634e4ec45f67%3A0xa1628495e445ab6a!2sDiv%20Academy%20(Elml%C9%99r)!5e0!3m2!1str!2saz!4v1777406012324!5m2!1str!2saz"
                 height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="w-[400px] xl:w-[1520px]"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
         </section>
     </main>
     <footer>
         <div class="container max-w-[1000px] mx-auto flex flex-col items-center justify-between gap-10 xl:flex-row">
             <div class="flex flex-col gap-2">
-                <h5 class="text-xl font-semibold" data-key="footertitle">Fruits</h5>
+                <h5 class="text-xl font-semibold" data-key="footertitle1"></h5>
                 <ul>
                     <li>randomised</li>
                     <li>words which</li>
@@ -315,7 +287,7 @@
                 </ul>
             </div>
             <div class="flex flex-col gap-2">
-                <h5 class="text-xl font-semibold" data-key="footertitle">Services</h5>
+                <h5 class="text-xl font-semibold" data-key="footertitle2"></h5>
                 <ul>
                     <li>randomised</li>
                     <li>words which</li>
@@ -328,7 +300,7 @@
                 </ul>
             </div>
             <div class="flex flex-col gap-2">
-                <h5 class="text-xl font-semibold" data-key="footertitle">List</h5>
+                <h5 class="text-xl font-semibold" data-key="footertitle3"></h5>
                 <ul>
                     <li>randomised</li>
                     <li>words which</li>
@@ -356,7 +328,7 @@
             </div>
         </div>
         <div class="bg-[#EFEDED] p-5 mt-10">
-            <p class="text-center">Copyright © 2019 All Rights Reserved By Free Html Templates</p>
+            <p class="text-center" data-key="Copyright"></p>
         </div>
     </footer>
 
